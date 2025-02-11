@@ -1,0 +1,127 @@
+$primary-color: #76723c;
+$secondary-color: #f9f9f9;
+$text-color: #333;
+$gray: #d0d3d6;
+$hover-color: #4f4e28;
+$font-stack: 'Arial', sans-serif;
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $secondary-color;
+    color: $text-color;
+    text-align: center;
+    font-family: $font-stack;
+}
+
+main {
+    flex-grow: 1;
+}
+
+section {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.welcome-msg{
+    h1{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+}
+
+#results {
+    text-align: justify;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color:darken($secondary-color, 5%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+
+    .result-title {
+        font-size: 1.8em;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 15px;
+    }
+
+    .sentiment-result {
+        font-size: 1.2em;
+        margin: 20px 0;
+        background: darken($secondary-color, 15%);
+        padding: 10px;
+        border-radius: 8px;
+        border-left: 5px solid $primary-color;
+
+        .sentiment {
+            font-weight: bold;
+            color: darken($primary-color, 15%);
+        }
+    }
+
+    .score-container {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-top: 10px;
+
+        h4{
+            color: $primary-color;
+            margin: auto 50px;
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+    }
+
+    .sentiment-score {
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .positive {
+        background: #dff0d8;
+        color: #3c763d;
+        border-left: 5px solid #3c763d;
+    }
+    
+    .negative {
+        background: #f2dede;
+        color: #a94442;
+        border-left: 5px solid #a94442;
+    }
+    
+    .neutral {
+        background: #d9edf7;
+        color: #31708f;
+        border-left: 5px solid #31708f;
+    }
+
+    .input-preview {
+        margin-top: 20px;
+        padding: 15px;
+        background: $gray;
+        border-radius: 8px;
+    
+        h2 {
+            font-size: 1.5em;
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+    
+        .extracted-text {
+            font-size: 1em;
+            font-style: italic;
+            color: #444;
+            background:  darken($secondary-color, 15%);
+            padding: 10px;
+            border-radius: 5px;
+        }
+    }
+}
+
