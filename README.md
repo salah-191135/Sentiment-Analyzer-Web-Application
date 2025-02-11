@@ -44,7 +44,7 @@ Before you begin, ensure you have the following installed:
 1. **Clone the repository:**
 
     ```sh
-    git clone <repository-url>
+    git clone [<repository-url>](https://github.com/salah-191135/Sentiment-Analyzer-Web-Application.git)
     ```
 
 2. **Navigate to the project directory:**
