@@ -21,7 +21,7 @@ async function handleSubmit(event) {
 
     try {
         const response = await fetch(
-            'http://localhost:8000/analyze-url',
+            'https://sentiment-analyzer-web-application.onrender.com/analyze-url',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
