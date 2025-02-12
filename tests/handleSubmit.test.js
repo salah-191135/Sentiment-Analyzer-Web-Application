@@ -51,7 +51,7 @@ describe("handleSubmit function", () => {
         inputField.value = "https://example.com";
         await handleSubmit(new Event("submit", { bubbles: true }));
 
-        expect(fetch).toHaveBeenCalledWith("http://localhost:8000/analyze-url", expect.any(Object));
+        expect(fetch).toHaveBeenCalledWith("https://sentiment-analyzer-web-application.onrender.com/analyze-url", expect.any(Object));
         expect(displayResults).toHaveBeenCalledWith(mockResponse);
     });
 
