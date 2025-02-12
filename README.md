@@ -110,7 +110,11 @@ npm test
 
 ## Deployment
 
-- [Netlify](https://www.netlify.com/)
+- [Netlify](https://www.netlify.com/) for frontend
+- https://deft-daifuku-cd3e7e.netlify.app/
+
+- [render](https://render.com/)for backend
+- https://sentiment-analyzer-web-application.onrender.com
 
 ## License
 
